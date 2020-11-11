@@ -1,0 +1,224 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+// html {
+//     font-size: 62.5%;
+// }
+
+body {
+  // box-sizing: border-box;
+  // padding: 3rem;
+}
+
+// ::selection {
+//     color: #7ef17e;
+// }
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&family=Raleway&family=Playfair+Display&family=IBM+Plex+Sans&family=Montserrat&display=swap");
+
+.quill {
+  margin: 12rem 0;
+}
+
+.ql-editor {
+  height: 80vh !important;
+  overflow-y: scroll;
+  top: 16rem;
+  bottom: 0;
+  position: fixed;
+  width: 97.8%;
+  padding: 2rem 1rem !important;
+  box-shadow: 0px 0px 20px 5px #bababa;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.ql-snow.ql-toolbar {
+  display: block;
+  background: #c9c9c9;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+// .ql-toolbar.ql-snow {
+//   border: 1px solid #ccc;
+//   box-sizing: border-box;
+//   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+//   padding: 8px;
+// }
+
+.ql-snow .ql-picker.ql-font {
+  width: 120px !important;
+}
+
+.ql-container ql-snow {
+  position: fixed;
+  top: 15rem;
+  bottom: 0;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.ql-picker.ql-font {
+  .ql-picker-item {
+    font-size: 0;
+    &:before {
+      content: attr(data-value) !important;
+      font-size: 14px;
+    }
+  }
+}
+
+.ql-picker.ql-font {
+  .ql-active {
+    &:before {
+      content: attr(data-value) !important;
+      font-size: 14px;
+    }
+  }
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="IBM-Plex-Sans"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="IBM-Plex-Sans"]::before {
+  font-family: "IBM Plex Sans", sans-serif;
+  content: "IBM Plex Sans" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Poppins"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Poppins"]::before {
+  font-family: "Poppins", sans-serif;
+  content: "Poppins" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Roboto"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Roboto"]::before {
+  font-family: "Roboto", sans-serif;
+  content: "Roboto" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Raleway"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Raleway"]::before {
+  font-family: "Raleway", sans-serif;
+  content: "Raleway" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Montserrat"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Montserrat"]::before {
+  font-family: "Montserrat", sans-serif;
+  content: "Montserrat" !important;
+}
+
+.ql-picker.ql-font .ql-picker-label[data-value="Playfair-Display"]::before,
+.ql-picker.ql-font .ql-picker-item[data-value="Playfair-Display"]::before {
+  font-family: "Playfair Display", sans-serif;
+  content: "Playfair Display" !important;
+}
+
+/* Set content font-families */
+.ql-font-IBM-Plex-Sans {
+  font-family: "IBM Plex Sans";
+}
+.ql-font-Poppins {
+  font-family: "Poppins";
+}
+.ql-font-Roboto {
+  font-family: "Roboto";
+}
+.ql-font-Raleway {
+  font-family: "Raleway";
+}
+.ql-font-Montserrat {
+  font-family: "Montserrat";
+}
+.ql-font-Playfair-Display {
+  font-family: "Playfair Display";
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="16px"]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="16px"]::before {
+  content: "Very Small" !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="28px"]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="28px"]::before {
+  content: "Small" !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="36px"]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="36px"]::before {
+  content: "Medium" !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="44px"]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="44px"]::before {
+  content: "Large" !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="60px"]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="60px"]::before {
+  content: "Very Large" !important;
+}
+
+// CSS Checkbox
+/* This css is for normalizing styles. You can skip this. */
+// *, *:before, *:after {
+//   -webkit-box-sizing: border-box;
+//   -moz-box-sizing: border-box;
+//   box-sizing: border-box;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .new {
+//   padding: 50px;
+// }
+
+.form-group {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.form-group label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 3px solid $color-black;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 6px;
+  height: 14px;
+  border: solid #000000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}

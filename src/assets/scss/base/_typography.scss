@@ -1,0 +1,85 @@
+.heading-primary {  
+  
+    &--main {
+      text-transform: capitalize;
+      display: block;
+      font-size: 5rem;
+      font-weight: 500;
+      letter-spacing: 0.1rem;
+  
+      @include respond(tab-land) {
+        font-size: 4rem;
+      }
+
+      @include respond(tab-port) {
+        font-size: 3rem;
+      }
+  
+      @include respond(phone) {
+        font-size: 2.6rem;
+      }
+  
+      @include respond(small-phone) {
+        font-size: 2rem;
+        font-weight: 500;
+        // margin: -5rem 2rem 1rem 3rem;
+      }
+    }
+  
+    &--sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: 0.1rem;
+  
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+  
+      @include respond(small-phone) {
+        font-size: 2rem;
+        margin: 0 2rem 1rem 3rem;
+      }
+    }
+  }
+  
+  .heading-secondary {
+    color: $color-white;
+  
+    &--main {
+      display: block;
+      font-size: 4rem;
+      font-weight: 500;
+      // letter-spacing: 0.2rem;
+  
+      @include respond(tab-land) {
+        font-size: 3rem;
+      }
+  
+      @include respond(phone) {
+        font-size: 2.6rem;
+      }
+  
+      // @include respond(small-phone) {
+      //   font-size: 2rem;
+      //   font-weight: 600;
+      //   margin: 0 2rem 1rem 2rem;
+      // }
+    }
+  
+    &--sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 0.1rem;
+  
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+  
+      @include respond(small-phone) {
+        font-size: 2rem;
+        margin: 0 2rem;
+      }
+    }
+  }
